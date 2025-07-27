@@ -7,7 +7,7 @@
 
 /* Apply mint green background to the whole app */
 body {
-  background-color: #d5f5e3; /* soft mint green */
+  background-color: #edf7fc;
   margin: 0;
   font-family: Arial, sans-serif;
   color: #333;
@@ -15,69 +15,3 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
-/* Container for dropdowns and filters */
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* Each filter block */
-.controls > div {
-  background: #ffffff; /* white background for dropdowns */
-  border-radius: 8px;  /* rounded corners */
-  padding: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  flex: 1 1 200px; /* responsive grow/shrink */
-  max-width: 250px;
-}
-
-/* Label styling */
-.controls label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
-}
-
-/* Dropdown styling */
-.controls select {
-  width: 100%;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: #fff;
-  font-size: 1rem;
-}
-
-/* Checkbox label */
-.controls input[type="checkbox"] {
-  margin-right: 8px;
-}
-
-/* Responsive chart wrapper */
-.chart-container {
-  flex: 1;
-  min-height: 400px;
-  padding: 20px;
-}
-
-/* Responsive tweaks for smaller screens */
-@media (max-width: 768px) {
-  .controls {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .controls > div {
-    max-width: 100%;
-  }
-
-  .chart-container {
-    min-height: 300px;
-    padding: 10px;
-  }
-}
-
