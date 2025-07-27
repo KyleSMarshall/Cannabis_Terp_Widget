@@ -149,8 +149,6 @@ export default class Example extends PureComponent {
 
     return (
       <div style={{ width: '100%', height: 560, fontFamily: 'Arial, sans-serif', userSelect: 'none' }}>
-
-      <div className="controls">
         <Box sx={{ mb: 4 }}>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
@@ -251,9 +249,7 @@ export default class Example extends PureComponent {
             ))}
           </div>
         )}
-      </div>
 
-      <div className="chart-container">
         <ResponsiveContainer width="100%" height="100%">
           <RadarChart cx="50%" cy="50%" outerRadius="80%" data={chartData}>
             <PolarGrid />
@@ -305,7 +301,6 @@ export default class Example extends PureComponent {
             <Tooltip />
           </RadarChart>
         </ResponsiveContainer>
-      </div>
 
         {(filteredStrains.length === 0) && (
           <p style={{ textAlign: 'center', color: 'red', marginTop: 10 }}>
